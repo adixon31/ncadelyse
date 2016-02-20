@@ -1,6 +1,9 @@
 body{
-	background-color: #000;
+	background-color: #fff;
 }
-.container{
-	background-color:#fff;
+nav{
+	background-color:#42ca9a;
+	color: #fff;
+	text-align: center;
+	width:100%;
 }
