@@ -6,11 +6,12 @@ body{
 	text-align: center;
 	font-size: 4em;
 }
-nav{
+nav .bottom{
 	background-color:#42ca9a;
 	text-align: center;
 	width:100%;
 	padding: 25px;
+	margin-top: 10px;
 }
 nav .top{
 	background-color:#913035;
