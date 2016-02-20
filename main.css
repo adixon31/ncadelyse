@@ -1,5 +1,6 @@
 body{
 	background-color: #fff;
+	font-family: Georgia, serif;
 }
 nav{
 	background-color:#42ca9a;
@@ -9,8 +10,8 @@ nav{
 }
 a{
 	color: #fff;
-	font-family: Georgia, serif;
 	font-weight: bold;
 	cursor: pointer;
 	text-decoration: none;
+	margin: 0px 25px 0px 25px;
 }
