@@ -2,6 +2,10 @@ body{
 	background-color: #fff;
 	font-family: Georgia, serif;
 }
+.title_header{
+	text-align: center;
+	font-size: 4em;
+}
 nav{
 	background-color:#42ca9a;
 	text-align: center;
