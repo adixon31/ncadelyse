@@ -5,10 +5,12 @@ nav{
 	background-color:#42ca9a;
 	text-align: center;
 	width:100%;
-	height: 200px;
+	height: 100px;
 }
 a{
 	color: #fff;
+	font-family: Georgia, serif;
 	cursor: pointer;
 	text-decoration: none;
+	vertical-align: middle;
 }
