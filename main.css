@@ -1,6 +1,10 @@
+@font-face{
+	font-family: Proxima-nova;
+	src: url(http://static1.squarespace.com/static/sitecss/56ad0abb76d99cc5518b51ea/54/507c1fdf84ae362b5e7be44e/56afdd391d07c0ec9411ca7b/2101-05142015/1455929538938/site.css?&filterFeatures=false);
+}
 body{
 	background-color: #fff;
-	font-family: Georgia, serif;
+	font-family: Proxima-nova;
 }
 .title_header{
 	text-align: left;
