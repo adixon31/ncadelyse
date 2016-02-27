@@ -1,0 +1,29 @@
+{
+  "name": "ncadelyse",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.0.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1"
+  },
+  "scripts": {
+    "test": "connect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adixon31/ncadelyse.git"
+  },
+  "author": "Angel Dixon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adixon31/ncadelyse/issues"
+  },
+  "homepage": "https://github.com/adixon31/ncadelyse#readme"
+}
