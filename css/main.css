@@ -9,21 +9,26 @@ body{
 	font-family: 'AaarghNormal';
 	height: 100%;
 }
-.title_header{
+.title-header{
 	text-align: left;
+	float:left;
 	font-size: 4em;
+	margin-left: 25px;
 }
 header{
 	position: absolute;
-	top:10px;
+	top:50px;
 	width:100%;
 }
 .top{
-	background-color: #777;
+	/*background-color: #777;*/
 	opacity: 0.5;
 	float:left;
+	/*text-align: center;*/
 	padding: 10px;
-	width: 100%;
+	margin: 25px 0px 0px 15px;
+
+	/*width: 100%;*/
 	
 	/*margin-top:25px;*/
 }
@@ -36,8 +41,8 @@ a{
 }
 .container{
 	background-color: #ccc;
-	margin-top:60px;	
+	margin-top:200px;	
 	height: 1000px;
-	width: 1300px;
+	width: 1100px;
 }
 
