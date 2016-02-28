@@ -39,10 +39,17 @@ a{
 	text-decoration: none;
 	margin: 0px 50px 0px 0px;
 }
+a:hover{
+	color: hotpink;
+	text-decoration: none;
+}
 .container{
 	background-color: #ccc;
 	margin-top:200px;	
 	height: 1000px;
 	width: 1100px;
+}
+.hidden{
+	display:none;
 }
 
