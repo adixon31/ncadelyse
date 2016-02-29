@@ -3,14 +3,8 @@ var app = angular.module("adelyse",['ngRoute', 'ngAnimate']);
 app.config(function($routeProvider, $locationProvider) {
 	$routeProvider	
 	.when('/', {
-		
 		templateUrl: 'views/home.html',
-		controller: 'MainController',
-		// resolve : {
-		// 	currentAuth: function(LoginService) {
-		// 		return LoginService.requireAuth();
-		// 	}
-		// }
+		controller: 'MainController'
 	})
 	.when('/about', {
 		templateUrl: '/views/about.html',
@@ -18,12 +12,13 @@ app.config(function($routeProvider, $locationProvider) {
 	})
 	.when('/projects', {
 		templateUrl: '/views/portfolio.html',
-		controller: 'MainController',
+		controller: 'MainController'
 		
 	})
 	.otherwise({
-		redirectTo: '/',
+		redirectTo: '/'
 	});
+	
 	$locationProvider.html5Mode({
   		enabled: true,
   		requireBase: false
