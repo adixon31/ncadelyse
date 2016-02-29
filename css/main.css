@@ -20,9 +20,12 @@ p{
 	margin-left: 25px;
 }
 header{
+	background-color: #000;
 	position: fixed;
-	top:50px;
+	top:0px;
 	width:100%;
+	padding-top: 50px;
+	z-index:10;
 }
 .top{
 	opacity: 0.5;
@@ -46,7 +49,7 @@ nav a{
 	font-size: 16px;
 }
 h1 a{
-	color: #333 !important;
+	color: #555 !important;
 }
 a:hover{
 	color: hotpink !important;
@@ -63,7 +66,7 @@ a:hover{
 .hidden{
 	display:none;
 }
-.about{
+.about, .portfolio{
 	font-size: 8em;
 	position:fixed;
 	bottom:0px;
@@ -73,6 +76,9 @@ a:hover{
 }
 .about:hover{
 	color:limegreen;
+}
+.portfolio:hover{
+	color:turquoise;
 }
 .reveal-animation {
   position:absolute;
