@@ -1,4 +1,4 @@
-var app = angular.module("adelyse",['ngRoute']);
+var app = angular.module("adelyse",['ngRoute', 'ngAnimate']);
 
 app.config(function($routeProvider, $locationProvider) {
 	$routeProvider	
@@ -27,5 +27,22 @@ app.config(function($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode({
   		enabled: true,
   		requireBase: false
+	});
 });
+app.animation('.reveal-animation', function() {
+  return {
+    enter: function(element, done) {
+      element.css('display', 'none');
+      element.fadeIn(2000, done);
+      return function() {
+        element.stop();
+      }
+    },
+    leave: function(element, done) {
+      element.fadeOut(2000, done)
+      return function() {
+        element.stop();
+      }
+    }
+  }
 });

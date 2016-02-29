@@ -11,49 +11,71 @@ body{
 }
 p{
 	color:#ccc;
+	font-size: 18px;
 }
 .title-header{
 	text-align: left;
 	float:left;
-	font-size: 4em;
+	font-size: 5em;
 	margin-left: 25px;
 }
 header{
-	position: absolute;
+	position: fixed;
 	top:50px;
 	width:100%;
 }
 .top{
-	/*background-color: #777;*/
 	opacity: 0.5;
 	float:left;
-	/*text-align: center;*/
 	padding: 10px;
-	margin: 25px 0px 0px 15px;
-
-	/*width: 100%;*/
-	
-	/*margin-top:25px;*/
+	margin: 55px 0px 0px 25px;
 }
-a{
-	color: #ccc;
+
+ a:active, a:visited, a:focus{
+	color: #ddd ;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none ;
+}
+nav a{
+	color: #ddd;
 	font-weight: bold;
 	cursor: pointer;
 	text-decoration: none;
 	margin: 0px 50px 0px 0px;
+	font-size: 16px;
+}
+h1 a{
+	color: #333 !important;
 }
 a:hover{
-	color: hotpink;
+	color: hotpink !important;
 	text-decoration: none;
 }
 
 .container{
 	/*background-color: #ccc;*/
-	margin-top:200px;	
+	/*opacity:.3;*/
+	margin-top:250px;	
 	height: 1000px;
 	width: 1100px;
 }
 .hidden{
 	display:none;
+}
+.about{
+	font-size: 8em;
+	position:fixed;
+	bottom:0px;
+	right:25px;
+	margin: 0;
+	padding: 0;
+}
+.about:hover{
+	color:limegreen;
+}
+.reveal-animation {
+  position:absolute;
+  width:1100px;
 }
 
