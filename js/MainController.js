@@ -1,4 +1,9 @@
-app.controller('MainController', ['$scope', 'location', function($scope, $location){
+ function MainController($scope, $location){
+    if($location.path() == "/about") $scope.bodyClass = "dark";
+    else if($location.path() == "/projects") $scope.bodyClass = "light";
+    else if($location.path() == "/code") $scope.bodyClass = "light";
+    else $scope.bodyClass = "dark";
+
   $scope.title = "Portfolio";
   $scope.promo = "Send all inquiries to angel.dixon31@gmail.com.";
   $scope.about = "One year ago, I graduated with a Bachelor's of Science in Computational Media Student from the Georgia Institute of Technology. My studies involved computer programming, design, and understanding the computer as a medium. While my more personal interests include film, narrative, and animation, I am open to experience other branches of my field such as UI/UX Design, game development, marketing, and web development.\nI am currently a software developer at a company that provides conferencing and collaboration solutions."
@@ -27,4 +32,6 @@ app.controller('MainController', ['$scope', 'location', function($scope, $locati
     $scope.products[index].dislikes += 1;
   };
   
-}]);
+};
+
+ app.controller('MainController', MainController);

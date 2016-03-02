@@ -20,28 +20,28 @@
 		<script type="text/javascript" src="js/MainController.js"></script>
 		
 	</head>
-	<body ng-app="adelyse">
+	<body ng-app="adelyse" ng-class="bodyClass">
 		<header>
 		<div>
 			<h1 class="text-uppercase title-header">
 				<a href="home">adelyse</a>
 			</h1>
 			<nav class="top text-uppercase text-muted">
-				<a href="about">About</a>
-				<a href="projects">Projects</a>
-				<a href="code">Code</a>
+				<a href="about" ng-click="bodyClass='dark'">About</a>
+				<a href="projects" ng-click="bodyClass='light'">Projects</a>
+				<a href="code" ng-click="bodyClass='light'">Code</a>
 				<a href="https://www.linkedin.com/in/angeledixon">LinkedIn</a>
 				<a href="https://github.com/adixon31/" target="_blank">GitHub</a>
 				<a href="https://www.codeeval.com/profile/angel.dixon31/" target="_blank">CodeEval</a>
 			</nav>
 		</div>
 		</header>
-	<div id="bg">
-	 <div class="container">
-		<div id="main" ng-controller= "MainController" >
-			<div ng-view class="reveal-animation"></div>
+		<div id="bg">
+			<div class="container">
+				<div id="main" ng-controller= "MainController" >
+					<div ng-view class="reveal-animation"></div>
+				</div>
+			</div> 
 		</div>
-	</div> 
-	</div>
 	</body>
 </html>
