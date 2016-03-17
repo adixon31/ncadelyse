@@ -1,0 +1,142 @@
+<div>
+	<p>http:// <input type="text" style="width:150px;" placeholder="Enter site name."> .webex.com 
+	
+	<a style="margin-left: 25px;" ng-click="removeSite($index)" ><span id="removeSite" class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove Website </a></p>
+	<p>
+
+	<input type="checkbox" ng-model="committed"><strong>Committed Minutes</strong> Minimum of 1,500 minutes per month</p>
+	<p uib-collapse="!committed" !committed class = "options" style="margin-left: 32px;">Committed Minutes per Month: <input type="text" style="width:50px;">
+	<span> Model: 
+		<select>
+	      	<option value="">---Please select---</option> 
+	      	<option value="meetingCenterPro">Meeting Center Pro</option> 
+      		<option value="enterpriseEdition">Enterprise Edition</option>
+			<option value="eventCenter">Event Center</option> 
+			<option value="eventCenterCampaign">Event Center Campaign (6 months)</option>
+    	</select>
+    </span>
+	<span> Rate/Min: <input type="text" style="width:50px;"></span>
+	<p uib-collapse="!committed" !committed class = "options" style="margin-left: 32px;">Total Monthly Charge: <input type="text" style="width:50px;">
+	</p></p>
+
+
+	<p>
+		<input type="checkbox" ng-model="uncommitted"><strong>Uncommitted Minutes</strong></p>
+	<p uib-collapse="!uncommitted" class="options" style="margin-left: 32px;">
+		Model:
+		<select>
+	      	<option value="">---Please select---</option> 
+	      	<option value="meetingCenterPro">Meeting Center Pro</option> 
+			<option value="eventCenter">Event Center</option> 
+    	</select>
+		<span> Rate/Min: <input type="text" style="width:50px;"></span>
+	</p>
+
+
+	<p>
+		<input type="checkbox" ng-model="seats"><strong>Seat/Ports</strong></p>
+	<p uib-collapse="!seats" class="options" style="margin-left: 32px;">Number of Seats: <input type="text" style="width:50px;">
+		<span> Model: 
+		<select>
+	      	<option value="">---Please select---</option> 
+	      	<option value="meetingCenterPro">Meeting Center Pro</option> 
+      		<option value="supportCenter">Support Center</option>
+			<option value="trainingCenter">Training Center</option> 
+			<option value="eventCenter">Event Center</option>
+	      	<option value="trainingSuite">Training Suite (MC & TC)</option> 
+      		<option value="support Suite">Support Suite (MC & SC)</option>
+			<option value="eventCenter">Event Center</option> 
+			<option value="all">Training and Support Suite (MC, TC & SC)</option>
+    	</select>
+    	</span>
+		<span> Seat Price/Month: <input type="text" style="width:50px;" ></span>
+		<p uib-collapse="!seats" class="options" style="margin-left: 32px;">Total Monthly Charge: <input type="text" style="width:50px;" ></p>
+	</p>
+
+	<p>
+		<input type="checkbox" ng-model="host"><strong>Named Host</strong></p>
+	<p uib-collapse="!host" class="options" style="margin-left: 32px;">Number of Named Hosts: <input type="text" style="width:50px;" >
+		<span> Model: 
+		<select>
+	      	<option value="">---Please select---</option> 
+	      	<option value="meetingCenterPro">Meeting Center Pro (cap 200)</option> 
+	      	<option value="meetingCenterFull25">Meeting Center Full Deployment (cap 25)</option> 
+	      	<option value="meetingCenterFull200">Meeting Center Full Deployment(cap 200)</option> 
+      		<option value="supportCenter">Support Center</option>
+			<option value="trainingCenter">Training Center</option> 
+			<option value="eventCenter">Event Center</option>
+	      	<option value="trainingSuite">Training Suite (MC & TC)</option> 
+      		<option value="support Suite">Support Suite (MC & SC)</option>
+			<option value="eventCenter">Event Center</option> 
+			<option value="all">Training and Support Suite (MC, TC & SC)</option>
+    	</select>
+    	</span>
+		<span> Price/Month: <input type="text" style="width:50px;" ></span>
+		<p uib-collapse="!host" class="options" style="margin-left: 32px;">Total Monthly Charge: <input type="text" style="width:50px;"></p>
+	</p>
+
+	<p>
+		<input type="checkbox" ng-model="rooms"><strong>Meeting Rooms</strong></p>
+	<p uib-collapse="!rooms" class="options" style="margin-left: 32px;">Number of Participants: <input type="text" style="width:50px;" >
+		<span> Model: 
+			<select>
+		      	<option value="">---Please select---</option> 
+		      	<option value="meetingCenterPro">Meeting Center Pro</option> 
+	      		<option value="supportCenter">Support Center</option>
+				<option value="trainingCenter">Training Center</option> 
+				<option value="eventCenter">Event Center</option>
+		      	<option value="trainingSuite">Training Suite (MC & TC)</option> 
+	      		<option value="support Suite">Support Suite (MC & SC)</option>
+				<option value="eventCenter">Event Center</option> 
+				<option value="all">Training and Support Suite (MC, TC & SC)</option>
+    		</select>
+		</span>
+		<span> Meetings/Month: <input type="text" style="width:50px;" ></span>
+		<p uib-collapse="!rooms" class="options" style="margin-left: 32px;">Price/Room: <input type="text" style="width:50px;" >
+		<span> Total Monthly Charge: <input type="text" style="width:50px;"></span></p>
+	</p>
+
+	<p>
+		<input type="checkbox" ng-model="webexActive"><strong>Webex Active Hosts</strong></p>
+	<p uib-collapse="!webexActive" class="options" style="margin-left: 32px;">Company Employee Count: <input type="text" style="width:50px;" >
+		<span> Named Host Price: <input type="text" style="width:50px;" ></span>
+		<span> Model: 
+		<select>
+	      	<option value="">---Please select---</option> 
+	      	<option value="meetingCenterPro">Meeting Center Pro</option> 
+      		<option value="supportCenter">Support Center</option>
+			<option value="trainingCenter">Training Center</option> 
+			<option value="eventCenter">Event Center</option>
+	      	<option value="trainingSuite">Training Suite (MC & TC)</option> 
+      		<option value="support Suite">Support Suite (MC & SC)</option>
+			<option value="eventCenter">Event Center</option> 
+			<option value="im" ng-model="im">EE Active Host 1000 (connect IM))</option>
+    	</select>
+    	</span>
+		<p uib-collapse="!webexActive" class="options" style="margin-left: 32px;"> 15% of Employees: <input type="text" style="width:50px;" >
+		<span>Total Monthly Charge: <input type="text" style="width:50px;"></span></p>
+	</p>
+
+	<p>
+		<input type="checkbox" ng-model="crm"><strong>CRM Cloud (All models)</strong></p>
+	<p uib-collapse="!crm" class="options" style="margin-left: 32px;">Company Employee Count: <input type="text" style="width:50px;" >
+		<span> Price/License <input type="text" style="width:50px;" ></span>
+		<span> Model: 
+		<select>
+	      	<option value="">---Please select---</option> 
+	      	<option value="meetingCenterPro">Meeting Center Pro</option> 
+      		<option value="supportCenter">Support Center</option>
+			<option value="trainingCenter">Training Center</option> 
+			<option value="eventCenter">Event Center</option>
+	      	<option value="trainingSuite">Training Suite (MC & TC)</option> 
+      		<option value="support Suite">Support Suite (MC & SC)</option>
+			<option value="eventCenter">Event Center</option> 
+			<option value="all">Training and Support Suite (MC, TC & SC)</option>
+    	</select>
+    	</span>
+		<p uib-collapse="!crm" class="options" style="margin-left: 32px;"> 3% of Employees: <input type="text" style="width:50px;" >
+		<span>Total Monthly Charge: <input type="text" style="width:50px;"></span></p>
+	</p>
+	<p>* Use "Add-on" models for length of agreement that is different from existing WebEx or for GPL</p>
+	
+</div>

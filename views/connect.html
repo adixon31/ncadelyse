@@ -1,0 +1,54 @@
+<div id="myModal" class="modal-header">
+	<h2>WebEx Connect Enterprise IM (Non Bundle) Section</h2>
+	<p>WebEx Connect IM not available as a standalone, it must be ordered alongside a new or existing WebEx service.</p>
+</div>
+<div class="modal-body" >
+	<form ng-submit="submitForm()" name="webexForm" novalidate>
+		<div class="form-group">
+			<h3>1. Customer Connect Email Domain(s)</h3>
+			<div style="margin-left: 30px;">
+				<div ng-repeat="email in emails track by $index">
+					<p>Email Domain {{$index + 1}} @ <input type="text" style="width:50px; margin-top: 5px;"> .com
+						<a style="margin-left: 25px;" ng-click="removeEmail($index)" ><span id="removeEmail" class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove Email </a>
+					</p>
+				</div>
+				<h5><a ng-click="addSite()" ><span id="addSite" class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Website</a></h5>
+				Check which applies:
+				<p>
+					<input type="radio" name="connect" ng-model ="connect" value="new">New Order
+					<input type="radio" name ="connect" ng-model ="connect"  value="existing">Existing 
+				</p>
+				<div uib-collapse="connect != 'existing'">
+					<label for="existingSite">Existing Agreement:  New license add-on, coterminous with existing licenses </label>
+					<p><input type="checkbox">Existing Agreement:  Replacing existing agreement (e.g. new pricing model / contract term)</p>
+					<p><input type="checkbox">Existing Agreement:  Transfer from Cisco WebEx </p>
+					<p><input type="checkbox">Existing Agreement:  Transfer from another Cisco WebEx partner</p>
+					<p><input type="checkbox">Existing Agreement:  Renewal</p> 
+				</div>
+				<h3>2. Contract Length</h3>
+				<div style="margin-left: 30px;">
+					<label for="contractLength">Contract Length</label>
+					<p>Initial term will be <input type="text" style="width:50px;"> months</p>
+					<p>Subsequent Renewal Term will be <input type="text" style="width:50px;"> months</p>
+				</div>
+
+				<h3>3. WebEx Connect IM Licensing Options:</h3>
+				<div style="margin-left: 30px;">
+					<label for="sites">Add Sites</label>
+					<div ng-repeat="site in sites track by $index">
+						<div ng-include src="'views/connectOptions.html'"></div>
+					</div>
+					
+				</div>
+				Additional pricing notes: <textarea style="margin-top: 5px;" cols="80" row="5"></textarea>
+				<p uib-collapse="!gpl">GPL Minimum Subscription Fee: Total of <input type="text" style="width:50px; margin-top: 5px;"> for Initial Term. Payment is due within 30 days after contract execution.</p>
+
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class="modal-footer" >
+	
+	<button type="button" data-dismiss="modal"  id="activate" ng-click="cancel()" >Submit</button>
+</div> 

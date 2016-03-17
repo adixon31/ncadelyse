@@ -1,0 +1,32 @@
+<div>
+	<p>http:// <input type="text" style="width:150px;" placeholder="Enter site name."> .webex.com 
+	
+	<a style="margin-left: 25px;" ng-click="removeSite($index)" ><span id="removeSite" class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove Website </a></p>
+	<p>
+
+	<input type="checkbox" ng-model="committed"><strong>WebEx Connect IM </strong> </p>
+	<p uib-collapse="!committed" !committed class = "options" style="margin-left: 32px;">Number of named hosts: <input type="text" style="width:50px;">
+	
+	<span> Price/Month: <input type="text" style="width:50px;"></span></p>
+	<p uib-collapse="!committed" !committed class = "options" style="margin-left: 32px;">Total Monthly Charge: <input type="text" style="width:50px;">
+	</p>
+
+
+	<p>
+		<input type="checkbox" ng-model="uncommitted"><strong>WebEx Connect AIM Federation</strong></p>
+	<p uib-collapse="!uncommitted" !committed class = "options" style="margin-left: 32px;">Number of named hosts: <input type="text" style="width:50px;">
+	
+	<span> Price/Month: <input type="text" style="width:50px;"></span></p>
+	<p uib-collapse="!committed" !committed class = "options" style="margin-left: 32px;">Total Monthly Charge: <input type="text" style="width:50px;">
+	</p>
+
+
+	<p>
+		<input type="checkbox" ng-model="seats"><strong>Check to enable IM Logging (optional)</strong></p>
+	<p uib-collapse="!seats" !committed class = "options" style="margin-left: 32px;">Number of named hosts: <input type="text" style="width:50px;">
+	
+	<span> Price/Month: <input type="text" style="width:50px;"></span></p>
+	<p uib-collapse="!committed" !committed class = "options" style="margin-left: 32px;">Total Monthly Charge: <input type="text" style="width:50px;">
+	</p>
+	
+</div>
