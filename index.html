@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/argh" type="text/css"/>
+		<link href='https://fonts.googleapis.com/css?family=Cardo|Average|Swanky+and+Moo+Moo|Roboto:300' rel='stylesheet' type='text/css'>		
 		<link rel="stylesheet" type="text/css" href="/bootstrap-3.3.6/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/bootstrap-3.3.6/dist/css/bootstrap.min.css.map">
 		<link rel="stylesheet" type="text/css" href="/bootstrap-3.3.6/dist/css/bootstrap-theme.min.css">
@@ -21,25 +22,25 @@
 		
 	</head>
 	<body ng-app="adelyse" ng-class="bodyClass">
-		<header>
-		<div>
-			<h1 class="text-uppercase title-header">
-				<a href="home">adelyse</a>
-			</h1>
-			<nav class="top text-uppercase text-muted">
-				<a href="about" ng-click="bodyClass='dark'">About</a>
-				<a href="projects" ng-click="bodyClass='light'">Projects</a>
-				<a href="code" ng-click="bodyClass='light'">Code</a>
-				<a href="https://www.linkedin.com/in/angeledixon">LinkedIn</a>
-				<a href="https://github.com/adixon31/" target="_blank">GitHub</a>
-				<a href="https://www.codeeval.com/profile/angel.dixon31/" target="_blank">CodeEval</a>
-			</nav>
-		</div>
-		</header>
-		<div id="bg">
-			<div class="container">
+		<div class="container">
+			<header>
+				<div>
+					<p class="title-header">
+						<a href="home">adelyse</a>
+					</p>
+					<nav class="top ">
+						<a href="about">About</a>
+						<a href="projects" >Projects</a>
+						<a href="code">Code</a>
+						<a href="https://www.linkedin.com/in/angeledixon">LinkedIn</a>
+						<a href="https://github.com/adixon31/" target="_blank">GitHub</a>
+						<a href="https://www.codeeval.com/profile/angel.dixon31/" target="_blank">CodeEval</a>
+					</nav>
+				</div>
+			</header>
+			<div id="bg">
 				<div id="main" ng-controller= "MainController" >
-					<div ng-view class="reveal-animation"></div>
+					<div ng-view class="reveal-animation content"></div>
 				</div>
 			</div> 
 		</div>

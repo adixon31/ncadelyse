@@ -3,76 +3,84 @@
    	font-weight: normal; 
    	font-style: normal; 
 }
-
-.dark{
-	background-color: #000 !important;
-	-webkit-transition:background-color 1s ease-in; 
-	-moz-transition:background-color 1s ease-in; 
-	-o-transition:background-color 1s ease-in; 
-	transition:background-color 1s ease-in;
-	font-family: 'AaarghNormal';
-	height: 100%;
+@font-face{
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-weight: normal; 
+   	font-style: normal; 
 }
-.light{
+@font-face{
+	font-family: 'Cardo', serif;
+	font-weight: normal; 
+   	font-style: normal; 
+}
+@font-face{
+	font-family: 'Average', serif;
+	font-weight: normal; 
+   	font-style: normal; 
+}
+@font-face{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+
+body{
+	font-family: 'Roboto';
+	font-size: 16px;
 	background-color: #fff !important;
+	background-image: url("../images/bludomain_01.jpg");
+	background-attachment: fixed;
 	-webkit-transition:background-color 1s ease-in; 
 	-moz-transition:background-color 1s ease-in; 
 	-o-transition:background-color 1s ease-in; 
 	transition:background-color 1s ease-in;
-	font-family: 'AaarghNormal';
 	height: 100%;
-	color: #000;
 }
 .container{
-	/*background-color: #ccc;*/
-	/*opacity:.3;*/
-	margin-top:250px;	
+	background-color: #fff;
+	opacity:.9;	
 	height: 1000px;
 	width: 1100px;
 }
-p{
-	color:#ccc;
-	font-size: 18px;
-}
+
 .title-header{
+	font-family: 'Swanky and Moo Moo';
 	text-align: left;
 	float:left;
-	font-size: 5em;
+	font-size: 7em;
 	margin-left: 25px;
+	color: #337ab7 !important;
 }
 header{
-	position: fixed;
+	/*position: fixed;*/
 	top:0px;
 	width:100%;
 	padding-top: 50px;
 	z-index:10;
 }
 .top{
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 	float:left;
-	padding: 10px;
-	margin: 55px 0px 0px 25px;
+	margin-left: 35px;
 }
 
  a:active, a:visited, a:focus{
-	color: #ddd ;
 	font-weight: bold;
 	cursor: pointer;
 	text-decoration: none ;
 }
 nav a{
-	color: #ddd;
+	font-family: 'Swanky and Moo Moo';
 	font-weight: bold;
+	float: left;
 	cursor: pointer;
 	text-decoration: none;
-	margin: 0px 50px 0px 0px;
-	font-size: 16px;
+	margin: 75px 50px 0px 0px;
+	font-size: 22px;
 }
-h1 a{
-	color: #555 !important;
-}
+
 a:hover{
-	color: hotpink !important;
+	color: #a41a31 !important;
 	text-decoration: none;
 }
 .hidden{
@@ -94,6 +102,16 @@ a:hover{
 }
 .reveal-animation {
   position:absolute;
-  width:1100px;
+  width:870px;
 }
+#bg{
+	margin: 250px 100px 0px 100px;
+}
+#Team3{
+	position: absolute;
+	left: 600px;
+	top: 50px;
+	height: 100px;
+}
+
 
