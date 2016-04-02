@@ -1,4 +1,4 @@
- function MainController($scope, $location){
+ function MainController($scope, $location, $http){
     // if($location.path() == "/about") $scope.bodyClass = "dark";
     // else if($location.path() == "/projects") $scope.bodyClass = "light";
     // else if($location.path() == "/code") $scope.bodyClass = "light";
@@ -117,6 +117,7 @@
         $scope.submitted = true;
         $scope.submitButtonDisabled = true;
         if (contactform.$valid) {
+          console.log($scope.formData);
             $http({
                 method  : 'POST',
                 url     : '../php/contact-form.php',
