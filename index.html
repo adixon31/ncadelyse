@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 		<title>ADELYSE</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +25,7 @@
 	</head>
 	<body ng-app="adelyse" ng-class="bodyClass">
 		<div class="container">
-			<header>
+			<header layout="row">
 
 			<div class="social">
 				<a href="https://www.linkedin.com/in/angeledixon" target="_blank"><img src="images/Social Media Icons/PNG/Square Color/Linkedin.png"></a>
@@ -37,17 +39,22 @@
 					<nav class="top ">
 						<a href="about">About</a>
 						<a href="projects" >Portfolio</a>
-						<a href="feature">Features</a>
+						<a href="features">Features</a>
 						<a href="contact">Contact Me</a>
 					</nav>
 				</div>
 			</header>
-			<img src="images/Line4.png">
-			<div id="bg" >
-				<div id="main" ng-controller= "MainController" >
-					<div ng-view class="reveal-animation content"></div>
-				</div>
-			</div> 
+			<main layout="row">
+				<img src="images/Line5.png">
+				<div id="bg" >
+					<div id="main" ng-controller= "MainController" >
+						<div ng-view class="reveal-animation content"></div>
+					</div>
+				</div> 
+			</main>
+			<!-- <footer layout="row">
+			This website was created from scratch using HTML, CSS, and AngularJS.
+			</footer> -->
 		</div>
 	</body>
 </html>

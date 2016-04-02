@@ -15,6 +15,16 @@ app.config(function($routeProvider, $locationProvider) {
 		controller: 'MainController'
 		
 	})
+	.when('/features', {
+		templateUrl: '/views/features.html',
+		controller: 'MainController'
+		
+	})
+	.when('/contact', {
+		templateUrl: '/views/contact.html',
+		controller: 'MainController'
+		
+	})
 	.otherwise({
 		redirectTo: '/'
 	});

@@ -64,13 +64,13 @@ body{
 	font-family: 'Swanky and Moo Moo';
 	text-align: left;
 	/*float:left;*/
-	font-size: 7em;
+	font-size: 5em;
 	margin-left: 25px;
 	/*color: #337ab7 !important;*/
 	z-index:15;
 }
 a{
-	color:#969696;
+	/*color:#969696;*/
 	color: #337ab7;
 }
 header{
@@ -100,8 +100,8 @@ nav a{
 	float: left;
 	cursor: pointer;
 	text-decoration: none;
-	margin: 75px 50px 0px 0px;
-	font-size: 22px;
+	margin: 55px 50px 0px 0px;
+	font-size: 18px;
 }
 .bar{
 	position:absolute;
@@ -143,11 +143,12 @@ a:hover{
 	background-color: #fff;
 
 }*/
-#Team3{
-	position: absolute;
-	left: 600px;
-	top: 50px;
-	height: 100px;
+#aboutImg{
+	/*position: absolute;*/
+	/*left: 600px;
+	top: 50px;*/
+	width:750px;
+	margin-left: 105px;
 }
 .social{
 	float:right;
@@ -162,8 +163,14 @@ a:hover{
 	background-attachment: fixed;*/
 	width:1010px;
 	padding: 25px 25px 25px 25px;
-	height: 70%;
 }
+.btn{
+	border-radius: 0 !important;
+	color:#fff;
+	background-color: #c35c6d !important;
+	border-style: none;
+}
+
 
 
 	/*background-image: url("../images/bludomain_01.jpg");*/

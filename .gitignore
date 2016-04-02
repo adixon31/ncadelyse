@@ -1,8 +1,8 @@
 mockup.js
-mockup.html
+views/mockup.html
 form.html
 mockup.css
 options.html
-connectOptions.html
-connect.html
+views/connectOptions.html
+views/connect.html
 .DS_Store
