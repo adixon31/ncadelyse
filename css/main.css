@@ -25,19 +25,31 @@
 
 
 body{
+	background-color: #d0d0d0;
 	font-family: 'Roboto';
 	font-size: 16px;
-	background-image: url("../images/bludomain_01.jpg");
-	background-attachment: fixed;
 	-webkit-transition:background-color 1s ease-in; 
 	-moz-transition:background-color 1s ease-in; 
 	-o-transition:background-color 1s ease-in; 
 	transition:background-color 1s ease-in;
 	height: 100%;
+	color: #337ab7 !important;
 }
+/*body{
+	background-color: #272822;
+	font-family: 'Roboto';
+	font-size: 16px;
+	
+	-webkit-transition:background-color 1s ease-in; 
+	-moz-transition:background-color 1s ease-in; 
+	-o-transition:background-color 1s ease-in; 
+	transition:background-color 1s ease-in;
+	height: 100%;
+	color: #969696 !important;
+}*/
 .container{
-	background-color: #f8f8f8;
-	/*opacity:.9;	*/
+/*	background-color: #f8f8f8;
+*/	/*opacity:.9;	*/
 	height: 1000px;
 	width: 1100px;
 }
@@ -48,8 +60,12 @@ body{
 	/*float:left;*/
 	font-size: 7em;
 	margin-left: 25px;
-	color: #337ab7 !important;
+	/*color: #337ab7 !important;*/
 	z-index:15;
+}
+a{
+	color:#969696;
+	color: #337ab7;
 }
 header{
 	/*position: fixed;*/
@@ -89,7 +105,7 @@ nav a{
 }
 
 a:hover{
-	color: #a41a31 !important;
+	/*color: #a41a31 !important;*/
 	text-decoration: none;
 }
 .hidden{
@@ -115,6 +131,7 @@ a:hover{
 }
 #bg{
 	margin: 50px 30px 0px 30px;
+
 }
 /*.bg{
 	background-color: #fff;
@@ -134,9 +151,14 @@ a:hover{
 	height:30px;
 }
 .content{
-	background-color: #fff; 
+	background-color: #e1e1e1; 
+	/*background-image: url("../images/bg.png");
+	background-attachment: fixed;*/
 	width:1010px;
 	padding: 25px 25px 25px 25px;
+	height: 70%;
 }
 
 
+	/*background-image: url("../images/bludomain_01.jpg");*/
+	/*background-attachment: fixed;*/
