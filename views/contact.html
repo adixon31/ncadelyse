@@ -1,11 +1,9 @@
 <div class="vertical-middle">
-        <div class="container">
+        <div class="container" style="width: 90%;">
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title">Contact Form</h2>
-                </div>
-                <div ng-controller="MainController" class="panel-body">
-                    <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form">
+                
+                <div ng-controller="MainController" >
+                    <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form" style="padding: 25px 25px 25px 0px;">
                         <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
                             <label for="inputName" class="col-lg-2 control-label">Name</label>
                             <div class="col-lg-10">
