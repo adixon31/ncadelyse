@@ -1,4 +1,4 @@
-var app = angular.module("adelyse",['ngRoute', 'ngAnimate']);
+var app = angular.module("adelyse",['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 
 app.config(function($routeProvider, $locationProvider) {
 	$routeProvider	
@@ -25,9 +25,16 @@ app.config(function($routeProvider, $locationProvider) {
 		controller: 'MainController'
 		
 	})
-	.otherwise({
-		redirectTo: '/'
-	});
+	.when('/portfolioPiece', {
+		templateUrl: '/views/portfolioPiece.html',
+		controller: 'MainController'
+		
+	})
+	.when('/portfolioPiece#myCarousel', {
+		templateUrl: '/views/portfolioPiece.html',
+		controller: 'MainController'
+		
+	})
 	
 	$locationProvider.html5Mode({
   		enabled: true,

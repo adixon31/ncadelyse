@@ -1,0 +1,16 @@
+
+
+  <div style="height: 375px">
+    <uib-carousel active="active" interval="7500" >
+      <uib-slide ng-repeat="slide in item.slides track by $index" index="$index">
+        <img ng-src="{{slide}}" style="margin: 25px auto 25px auto; height:350px;">
+       
+      </uib-slide>
+    </uib-carousel>
+  </div>
+<div class="row long-description">
+<p>{{item.long}}</p></div>
+<p>Try it yourself:</p>
+<a href="../Paint_the_Night_with_Fireflies/application.macosx/Paint the Night with Fireflies.app">For MacOS X</a>
+<a href="../Paint_the_Night_with_Fireflies/application.windows64/Paint_the_Night_with_Fireflies.exe">For Windows 64</a>
+

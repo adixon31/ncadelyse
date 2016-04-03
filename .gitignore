@@ -5,4 +5,5 @@ mockup.css
 options.html
 views/connectOptions.html
 views/connect.html
+views/options.html
 .DS_Store
