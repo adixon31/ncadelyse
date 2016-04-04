@@ -42,6 +42,38 @@
       cover: 'http://ecx.images-amazon.com/images/I/51fWQRGPAUL._SY344_BO1,204,203,200_.jpg',
       likes: 0,
       dislikes: 0
+    },
+    {
+      name: 'Paint the Night with Fireflies',
+      date: 'Created: 10-30-2012',
+      cover: '../images/PNF/7-Paint3.png',
+      short: 'Paint the night with this interactive Processing sketch.',
+      long: 'This sketch was a class project. The assignment was to create a "Paint-like" application that allowed the user to draw. It was specified that we should have an out-of-the-box idea and after watching fireflies one night, I imagined directing one to leave a trail of light.',
+      slides: ['../images/PNF/0-Sunset1.png', '../images/PNF/3-Sunset4.png', '../images/PNF/4-Start.png', '../images/PNF/5-Paint1.png', '../images/PNF/6-Paint2.png', '../images/PNF/7-Paint3.png'],
+      template:"../views/pnf.html",
+      likes: 0,
+      dislikes: 0
+    },
+    {
+      name: 'Trial by Journal',
+      date: 'Created: 10-30-2012',
+      cover: 'http://ecx.images-amazon.com/images/I/51fWQRGPAUL._SY344_BO1,204,203,200_.jpg',
+      likes: 0,
+      dislikes: 0
+    },
+    {
+      name: 'Harry Potter and the Half-Blooded Prince',
+      date: 'Created: 10-30-2012',
+      cover: 'https://d1466nnw0ex81e.cloudfront.net/n_iv/600/964115.jpg',
+      likes: 0,
+      dislikes: 0
+    },
+    {
+      name: 'Trial by Journal',
+      date: 'Created: 10-30-2012',
+      cover: 'http://ecx.images-amazon.com/images/I/51fWQRGPAUL._SY344_BO1,204,203,200_.jpg',
+      likes: 0,
+      dislikes: 0
     }
     ];
 
